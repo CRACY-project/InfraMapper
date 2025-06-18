@@ -1,0 +1,11 @@
+#!/bin/sh
+
+JAR=target/scala-3.7.1/InfraMapper.jar
+
+if [ ! -e $JAR ]
+then
+	echo "Could not open $JAR. Make sure to first compile the code via 'sbt assembly'"
+	exit 1
+fi
+
+java -jar $JAR $@

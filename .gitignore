@@ -1,0 +1,8 @@
+tmp/
+cache/
+project/target
+project/project
+target
+.idea
+.bsp
+plugins/scansible-main
